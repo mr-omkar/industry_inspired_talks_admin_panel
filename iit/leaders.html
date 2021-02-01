@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"/>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css"/>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<style>
+		table{
+			/*table-layout: fixed;*/
+		}
+		.del{
+			color:white;
+		}
+		.edit{
+			color:white;
+		}
+		.leader-right{
+			float:right;
+		}
+	</style>
+</head>
+<body>
+	<div class="container shadow p-3 mb-5 bg-white rounded">
+		<div class="card" style="border:none;">
+			<div class="card-header" style="border:none;"> 
+				<h4>Leaders List <button type="submit" class="btn btn-secondary leader-right"><span><i class="fas fa-plus"></i></span><span>  Add Leader</span> </button></h4>
+					
+			</div>
+			<div class="card-body" style="border:none;">
+				<table id="leaders" class="table table-bordered table-hover" style="width:100%">
+			        <thead>
+			            <tr>
+			            	<th>ID</th>
+			                <th>Name</th>
+			                <th>Company</th>
+			                <th>Position</th>
+			                <th>Email</th>
+			                <th colspan="2"><center>Action</center></th>
+			                <th>Nationality</th>
+			                
+			            </tr>
+			        </thead>
+			        <tbody>
+			            <tr>
+			            	<td>1</td>
+			                <td>Tiger Nixon</td>
+			                <td>System Architect</td>
+			                <td>Edinburgh</td>
+			                <td>61</td>
+			                <td><button class="btn btn-danger"><i class="far fa-trash-alt del">  Delete</i></button></td>
+			                <td><button class="btn btn-primary"><i class="far fa-edit edit">  Edit</i></button></td>
+			                <td>India</td>
+
+			            </tr>
+			            <tr>
+			            	<td>1</td>
+			                <td>Garrett Winters</td>
+			                <td>Accountant</td>
+			                <td>Tokyo</td>
+			                <td>63</td>
+			                
+			                <td><button class="btn btn-danger"><i class="far fa-trash-alt del">  Delete</i></button></td>
+			                <td><button class="btn btn-primary"><i class="far fa-edit edit">  Edit</i></button></td>
+			                <td>India</td>
+			            </tr>
+			            <tr>
+			            	<td>1</td>
+			                <td>Ashton Cox</td>
+			                <td>Junior Technical Author</td>
+			                <td>San Francisco</td>
+			                <td>66</td>
+			                
+			                <td><button class="btn btn-danger"><i class="far fa-trash-alt del">  Delete</i></button></td>
+			                <td><button class="btn btn-primary"><i class="far fa-edit edit">  Edit</i></button></td>
+			                <td>India</td>
+			            </tr>
+			            <tr>
+			            	<td>1</td>
+			                <td>Cedric Kelly</td>
+			                <td>Senior Javascript Developer</td>
+			                <td>Edinburgh</td>
+			                <td>22</td>
+			                
+			                <td><button class="btn btn-danger"><i class="far fa-trash-alt del">  Delete</i></button></td>
+			                <td><button class="btn btn-primary"><i class="far fa-edit edit">  Edit</i></button></td>
+			                <td>India</td>
+			            </tr>
+			            <tr>
+			            	<td>1</td>
+			                <td>Airi Satou</td>
+			                <td>Accountant</td>
+			                <td>Tokyo</td>
+			                <td>33</td>
+			                <td><button class="btn btn-danger"><i class="far fa-trash-alt del">  Delete</i></button></td>
+			                <td><button class="btn btn-primary"><i class="far fa-edit edit">  Edit</i></button></td>
+			                <td>India</td>
+			            </tr>
+			            <tr>
+			            	<td>1</td>
+			                <td>Brielle Williamson</td>
+			                <td>Integration Specialist</td>
+			                <td>New York</td>
+			                <td>61</td>
+			                <td><button class="btn btn-danger"><i class="far fa-trash-alt del"></i></button></td>
+			                <td><button class="btn btn-primary"><i class="far fa-edit edit"></i></button></td>
+			                <td>India</td>
+			            </tr>
+			            <tr>
+			            	<td>1</td>
+			                <td>Herrod Chandler</td>
+			                <td>Sales Assistant</td>
+			                <td>San Francisco</td>
+			                <td>59</td>
+			                <td><button class="btn btn-danger"><i class="far fa-trash-alt del"></i></button></td>
+			                <td><button class="btn btn-primary"><i class="far fa-edit edit"></i></button></td>
+			                <td>India</td>
+			            </tr>
+			        </tbody>
+			        <tfoot>
+			          <tr>
+			          		<th>ID</th>
+			                <th>Name</th>
+			                <th>Company</th>
+			                <th>Position</th>
+			                <th>Email</th>
+			                <th colspan="2"><center>Action</center></th>
+			                <th>Nationality</th>
+			            </tr>
+			        </tfoot>
+			    </table>
+    </div>
+    <div class="card-footer" style="border:none;">
+    	
+    </div>
+</div>
+</div>
+<script>
+	$(document).ready(function() {
+	    $('#leaders').DataTable();
+	} );
+</script>
+</body>
+</html>
